@@ -7,10 +7,17 @@ const validateEmail = (email) => {
   return re.test(email);
 };
 
+const showError = (message, error) => {
+  emailInput.style.borderColor = "red";
+  errorMsg.textContent = message;
+  errorMsg.style.display = "block";
+  error.preventDefault();
+};
+
 ctaForm.addEventListener("submit", (error) => {
-  if (emailInput.value === "" || !validateEmail(emailInput.value)) {
-    emailInput.style.borderColor = "red";
-    errorMsg.style.display = "block";
-    error.preventDefault();
+  if (emailInput.value === "") {
+    showError("Whoops! It looks like you forgot to add your email", error);
+  } else if (!validateEmail(emailInput.value)) {
+    showError("Please provide a valid email address", error);
   }
 });

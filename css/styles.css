@@ -79,6 +79,7 @@ body {
   border-radius: 28px;
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem var(--pale-blue);
+  transition: all 0.3s;
 }
 
 .btn-notify:hover,
@@ -111,6 +112,20 @@ body {
 .icon {
   width: 3.2rem;
   height: 3.2rem;
+  color: var(--blue);
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover,
+.icon:active {
+  color: var(--white);
+  background-color: var(--blue);
 }
 
 .copyright {
