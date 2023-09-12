@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Ping coming soon page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <img class="img-logo" src="/images/logo.svg" alt="Company Logo" />
+    <h1 class="heading-primary" ?>
+      We are launching <span class="soon">soon!</span>
+    </h1>
+    <p class="subscribe">Subscribe and get notified</p>
+    <form id="cta-form" class="cta-form" action="/" method="GET">
+      <input
+        class="email-input"
+        type="email-input"
+        id="email-input"
+        name="email-input"
+        placeholder="Your email address…"
+      />
+      <p class="error-msg">Please provide a valid email address</p>
+      <button class="btn-notify" type="submit">Notify Me</button>
+    </form>
+    <img
+      class="img-illustration"
+      src="/images/illustration-dashboard.png"
+      alt="Illustration Dashboard"
+    />
+    <div class="social-media-container">
+      <img class="icon" src="/images/facebook-f.svg" alt="Facebook Icon" />
+      <img class="icon" src="/images/twitter.svg" alt="Twitter Icon" />
+      <img class="icon" src="/images/instagram.svg" alt="Instagram Icon" />
+    </div>
+    <p class="copyright">© Copyright Ping. All rights reserved.</p>
+  </body>
+</html>

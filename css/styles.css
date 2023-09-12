@@ -1,0 +1,120 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --white: #fff;
+  --light-blue: hsl(223, 50%, 63%);
+
+  --light-weight: 300;
+  --semi-bold-weight: 600;
+  --bold-weight: 700;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-logo {
+  width: 9rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: var(--light-weight);
+  color: var(--gray);
+  margin-bottom: 1.6rem;
+}
+
+.soon {
+  font-weight: var(--bold-weight);
+  color: var(--very-dark-blue);
+}
+
+.subscribe {
+  font-size: 2rem;
+  font-weight: var(--light-weight);
+  color: var(--very-dark-blue);
+  margin-bottom: 4rem;
+}
+
+.cta-form {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 9.4rem;
+  position: relative;
+}
+
+.email-input {
+  width: 42.1rem;
+  height: 5.6rem;
+  font-size: 1.6rem;
+  text-indent: 3rem;
+  border: 1px solid var(--pale-blue);
+  border-radius: 28px;
+}
+
+.email::placeholder {
+  font-size: 1.6rem;
+  font-weight: var(--light-weight);
+  color: var(--pale-blue);
+}
+
+.btn-notify {
+  height: 5.6rem;
+  font-size: 1.6rem;
+  font-weight: var(--semi-bold-weight);
+  color: var(--white);
+  background-color: var(--blue);
+  padding-left: 6.2rem;
+  padding-right: 6.2rem;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem var(--pale-blue);
+}
+
+.btn-notify:hover,
+.btn-notify:active {
+  background-color: var(--light-blue);
+}
+
+.error-msg {
+  color: red;
+  font-size: 1.2rem;
+  font-style: italic;
+  position: absolute;
+  left: 3rem;
+  bottom: -0.6rem;
+  transform: translateY(100%);
+  display: none;
+}
+
+.img-illustration {
+  width: 64rem;
+  margin-bottom: 7.2rem;
+}
+
+.social-media-container {
+  display: flex;
+  gap: 1.17rem;
+  margin-bottom: 2.5rem;
+}
+
+.icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: var(--light-weight);
+  color: var(--gray);
+}
